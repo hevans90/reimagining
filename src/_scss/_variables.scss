@@ -1,0 +1,69 @@
+// PATHS
+// Assets paths
+$fonts-path: '/assets/fonts';
+$images-path: '/assets/images';
+$icons-path: '/assets/icons';
+
+// LAYOUT
+// General
+$global-width: 88.75rem; // 1420px
+
+// Screen breakpoints
+$breakpoints: (
+  small: 0,
+  medium-min: 640px,
+  medium-max: 1023px,
+  large-min: 1024px,
+  large-max: 1199px,
+  xlarge-min: 1200px,
+  xlarge-max: 1439px,
+  xxlarge-min: 1440px,
+);
+
+// COLORS
+// Shades
+$shades: (
+  'shade-0': var(--shade-0),
+  'shade-1': var(--shade-1),
+  'shade-2': var(--shade-2),
+  'shade-3': var(--shade-3),
+  'shade-4': var(--shade-4),
+  'shade-5': var(--shade-5),
+  'shade-6': var(--shade-6),
+);
+
+// Main colors
+$colors: (
+  'forest': var(--forest),
+  'aqua': var(--aqua),
+  'ruby': var(--ruby),
+  'zing': var(--zing),
+  'carrot': var(--carrot),
+  'grape': var(--grape),
+  'hot-pink': var(--hot-pink),
+  'sunshine': var(--sunshine),
+);
+
+// Pale colors
+$pale-colors: (
+  'pale-ruby': var(--pale-ruby),
+  'pale-aqua': var(--pale-aqua),
+  'pale-carrot': var(--pale-carrot),
+  'pale-forest': var(--pale-forest),
+  'pale-zing': var(--pale-zing),
+  'pale-grape': var(--pale-grape),
+  'pale-hot-pink': var(--pale-hot-pink),
+  'pale-sunshine': var(--pale-sunshine),
+);
+
+// Text sizing
+$font-size: (
+  'tiny': var(--font-size-tiny),
+  'xsmall': var(--font-size-xsmall),
+  'small': var(--font-size-small),
+  'medium': var(--font-size-medium),
+  'large': var(--font-size-large),
+  'xlarge': var(--font-size-xlarge),
+  'xxlarge': var(--font-size-xxlarge),
+  'huge': var(--font-size-huge),
+);
