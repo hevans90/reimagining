@@ -1,8 +1,12 @@
-$margin: 10px;
-
 body {
-  width: calc(100vw - #{$margin * 2});
-  height: calc(100vh - #{$margin * 2});
+  width: 100vw;
+  height: 100vh;
+  margin: unset;
 
-  margin: $margin;
+  font-family: Avenir, Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-align: center;
+  color: var(--primary);
+  background-color: var(--background);
 }

@@ -1,20 +1,28 @@
 <template>
   <div class="container">
-    <img alt="Vue logo" src="../assets/logo.svg" />
-    <app-header msg="Welcome to Your Vue.js + TypeScript App" />
-
-    <p>This should be orangeeeesss</p>
+    <iframe
+      src="https://player.vimeo.com/video/559058818"
+      frameborder="0"
+      allow="autoplay; fullscreen; picture-in-picture"
+      allowfullscreen
+    ></iframe>
+    <p>
+      <a href="https://vimeo.com/559058818"
+        >Values in Business: an introduction by Neil Hawkes</a
+      >
+      from <a href="https://vimeo.com/user33823728">Nigel Cohen</a> on
+      <a href="https://vimeo.com">Vimeo</a>.
+    </p>
   </div>
 </template>
 
 <script lang="ts">
 import { defineComponent } from 'vue';
-import appHeader from '@/components/app-header.vue'; // @ is an alias to /src
 
 export default defineComponent({
   name: 'home',
   components: {
-    appHeader,
+    // appHeader,
   },
 });
 </script>
@@ -22,25 +30,13 @@ export default defineComponent({
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style lang="scss" scoped>
 .container {
-  display: grid;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 
-  grid-template-rows: 50px auto;
-
-  grid-template-areas:
-    'header'
-    'body'
-    'footer';
-
-  p {
-    color: var(--carrot);
-
-    @media screen and (min-width: map-get($breakpoints, 'xxlarge-min')) {
-      color: red;
-    }
+  iframe {
+    width: 100vw;
+    height: 500px;
   }
-}
-
-app-header {
-  grid-area: body;
 }
 </style>
